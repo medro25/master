@@ -3,4 +3,20 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_grey">#d3d3d3</color>
+    <color name="light_blue">#1E88E5</color>
+    <color name="purple">#472f92</color>
+    <color name="transparent">#05050505</color>
+    <color name="transparent_orange">#99FFD180</color>
+    <color name="light_pink">#FFB6C1</color>
+    <color name="dd">#8BA036</color>
+    <color name="darker_gray">#aaa</color>
+    <color name="black">#000000</color>
+    <color name="light_black">#cc000000</color>
+    <color name="gen_black">#000000</color>
+    <color name="light_gray">#aaa</color>
+    <color name="like_red">#FF0000</color>
+    <color name="like_gray">#d3d3d3</color>
+    <color name="color_light_gray_background">#eeeeee</color>
 </resources>
