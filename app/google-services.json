@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "87613134720",
+    "firebase_url": "https://placereminder-985cf.firebaseio.com",
+    "project_id": "placereminder-985cf",
+    "storage_bucket": "placereminder-985cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87613134720:android:4950063b4343e79cc31365",
+        "android_client_info": {
+          "package_name": "com.witnovus.placefinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87613134720-55d7f3qrtq4b01spu9vas648l2r6gs17.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.witnovus.placefinder",
+            "certificate_hash": "4e6b15969c1859e1b377fbd400fbb55b4724f1c2"
+          }
+        },
+        {
+          "client_id": "87613134720-i83o99sn37lmvbhlqfmva4dl5ui3n3qp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ23ROTm-X2nMIhj-Ow8-U_3xd9XqY9-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87613134720-i83o99sn37lmvbhlqfmva4dl5ui3n3qp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
