@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=71:B8:DC:A4:9A:B8:14:D3:B5:E6:39:16:63:8A:DD:84:83:FC:C9:0B%3Bcom.witnovus.placefinder.ui
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.witnovus.placefinder.ui
+
+    SHA-1 certificate fingerprint:
+    71:B8:DC:A4:9A:B8:14:D3:B5:E6:39:16:63:8A:DD:84:83:FC:C9:0B
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">YOUR_KEY_HERE</string>
+</resources>
