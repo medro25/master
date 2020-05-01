@@ -31,7 +31,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyBOxxOEDviMhpAeiP_CjmfHwYME1E9CMAA" />
 
         <activity
             android:name=".ui.searchplace.SearchPlaceActivity"
@@ -44,7 +44,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.SplashScreenActivity" />
-        <activity android:name=".MainActivity" >
+        <activity android:name=".ui.dashboard.DashboardActivity" >
         </activity>
 
         <service

@@ -6,12 +6,10 @@ import android.os.Bundle
 import android.os.Handler
 import android.transition.AutoTransition
 import android.transition.TransitionManager
-import android.view.Window
-import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
-import com.witnovus.placefinder.MainActivity
+import com.witnovus.placefinder.ui.dashboard.DashboardActivity
 import com.witnovus.placefinder.R
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -49,7 +47,7 @@ class SplashScreenActivity : AppCompatActivity() {
     private fun gotoNextActivity() {
         Handler().postDelayed({
             //start main activity
-            startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
+            startActivity(Intent(this@SplashScreenActivity, DashboardActivity::class.java))
             //finish this activity
             finish()
         }, 5000)
