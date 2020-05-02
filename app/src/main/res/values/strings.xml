@@ -28,5 +28,18 @@
     <string name="str_forgot_password">Forgot Password?</string>
     <string name="lbl_set_reminder">Set a reminder</string>
     <string name="lbl_find_a_place">Find a place</string>
+    <string name="title_activity_search_places">SearchPlacesActivity</string>
+
+    <string name="msg_devices_not_support">Your Device does not support Google Play Services.</string>
+    <string name="msg_location_service_enable">You need to enable location service to get more accurate location.</string>
+    <string name="lbl_give_location_permission">TMS requires access to your location, this allows you to find best route.</string>
+
+    <string name="lbl_ok">OK</string>
+
+    <string name="msg_on_internet">Please Check Internet Connection.</string>
+    <string name="msg_start_route">Are you sure you want to start route ?</string>
+
+    <string name="lbl_yes">Yes</string>
+    <string name="lbl_no">No</string>
 
 </resources>
