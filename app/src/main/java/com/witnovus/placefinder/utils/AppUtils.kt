@@ -1,5 +1,7 @@
 package com.witnovus.placefinder.utils
 
+import android.text.TextUtils
+import android.util.Patterns
 import android.app.Dialog
 import android.content.Context
 import android.net.ConnectivityManager
@@ -9,7 +11,10 @@ import android.widget.TextView
 import androidx.annotation.NonNull
 import com.witnovus.placefinder.R
 
+
+
 class AppUtils {
+
 
     companion object{
 
@@ -37,6 +42,10 @@ class AppUtils {
          */
         fun checkConnection(@NonNull context: Context): Boolean {
             return (context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager).activeNetworkInfo != null
+        }
+
+        fun isValidEmail(target: CharSequence?): Boolean {
+            return !TextUtils.isEmpty(target) && Patterns.EMAIL_ADDRESS.matcher(target!!).matches()
         }
 
     }

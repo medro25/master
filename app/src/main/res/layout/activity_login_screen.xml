@@ -27,14 +27,14 @@
                 android:src="@drawable/ic_banner_image" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/login_text_input_layout_email"
+                android:id="@+id/emailTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_16sdp"
                 android:layout_marginEnd="@dimen/_16sdp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/lgoinEmailIdEdtView"
+                    android:id="@+id/loginEmailIdEdtView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/email"
@@ -42,7 +42,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/login_txt_input_layout_password"
+                android:id="@+id/loginPasswordInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_16sdp"

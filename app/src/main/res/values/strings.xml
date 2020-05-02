@@ -20,7 +20,6 @@
     <string name="str_register">Register</string>
     <string name="str_full_name">Full Name</string>
     <string name="msg_enter_full_name">Enter full name</string>
-    <string name="msg_enter_email_id">Enter a email-id</string>
     <string name="msg_enter_contact_number">Enter a Contact Number</string>
     <string name="msg_enter_at_least_8_char">Enter password at least 8 char</string>
     <string name="str_login">Login</string>
@@ -28,6 +27,12 @@
     <string name="str_forgot_password">Forgot Password?</string>
     <string name="lbl_set_reminder">Set a reminder</string>
     <string name="lbl_find_a_place">Find a place</string>
+    <string name="str_reset_password">Reset Password</string>
+    <string name="msg_enter_email_id">Enter a email-id</string>
+    <string name="str_registration_successfully">Registration successfully</string>
+    <string name="string_email_id_is_already_register">Email id is already register</string>
+    <string name="string_check_internet_conn_msg">Internet Connection Required, Please Turn On Internet.</string>
+    <string name="str_remaining_time">Remaining Time</string>
     <string name="title_activity_search_places">SearchPlacesActivity</string>
 
     <string name="msg_devices_not_support">Your Device does not support Google Play Services.</string>
