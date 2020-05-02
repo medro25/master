@@ -48,7 +48,7 @@ class LoginScreenActivity : AppCompatActivity() {
         emailId = loginEmailIdEdtView.text.toString()
         password = loginPasswordEdtView.text.toString()
 
-        if (AppUtils.isValidEmail(emailId)) {
+        if (TextUtils.isEmpty(emailId) || AppUtils.isValidEmail(emailId)) {
             emailTextInputLayout.error = getString(R.string.msg_enter_email_id)
             emailTextInputLayout.isErrorEnabled = true
             loginEmailIdEdtView.requestFocus()
@@ -57,7 +57,7 @@ class LoginScreenActivity : AppCompatActivity() {
             emailTextInputLayout.isErrorEnabled = false
         }
         if (TextUtils.isEmpty(password)) {
-            loginPasswordInputLayout.error = getString(R.string.msg_enter_email_id)
+            loginPasswordInputLayout.error = getString(R.string.str_enter_a_password)
             loginPasswordInputLayout.isErrorEnabled = true
             loginPasswordEdtView.requestFocus()
             return
