@@ -45,9 +45,9 @@ class SetJobService constructor(val context: Context, val time: Long, val notifi
                 val resultCode = scheduler!!.schedule(jobInfo!!)
 
                 if (resultCode == JobScheduler.RESULT_SUCCESS) {
-                    Toast.makeText(context, "Reminder Set", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Reminder set successfully", Toast.LENGTH_SHORT).show()
                 } else {
-                    Toast.makeText(context, "Reminder Not Set", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Reminder does not set,Please try again", Toast.LENGTH_SHORT).show()
                 }
             }
 

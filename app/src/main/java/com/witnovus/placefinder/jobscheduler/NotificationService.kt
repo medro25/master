@@ -17,7 +17,7 @@ class NotificationService : JobService() {
 
     private fun startNotification(params: JobParameters) {
         val notificationMessage = params.getExtras().getString("notificationMessage")!!
-        Log.d("hour", "notificationMessage" + notificationMessage)
+        Log.d("Set Notification", "notificationMessage" + notificationMessage)
         val mBuilder: NotificationCompat.Builder = NotificationCompat.Builder(this)
             .setAutoCancel(true)
             .setContentTitle("App Reminder")

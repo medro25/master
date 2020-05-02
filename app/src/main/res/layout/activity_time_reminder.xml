@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_10sdp"
             android:padding="@dimen/_5sdp"
-            android:text="@string/str_remaining_time"
+            android:text="@string/lbl_select_time"
             android:textColor="@color/black"
             android:textSize="@dimen/_12ssp" />
 
