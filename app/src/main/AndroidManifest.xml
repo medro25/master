@@ -15,8 +15,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.user.ForgotPasswordActivity"></activity>
-        <activity android:name=".ui.user.LoginScreenActivity"></activity>
+        <activity android:name=".ui.user.TimeReminderActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.user.ForgotPasswordActivity" />
+        <activity android:name=".ui.user.LoginScreenActivity" />
         <activity
             android:name=".ui.reminder.SetReminderActivity"
             android:label="@string/title_activity_set_reminder"
@@ -37,14 +44,10 @@
             android:name=".ui.searchplace.SearchPlaceActivity"
             android:label="@string/title_activity_search_place" />
         <activity android:name=".ui.user.RegistrationActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ui.SplashScreenActivity" />
-        <activity android:name=".ui.dashboard.DashboardActivity"></activity>
+        <activity android:name=".ui.dashboard.DashboardActivity" />
 
         <service
             android:name=".location.CurrentLocationTrackerService"
