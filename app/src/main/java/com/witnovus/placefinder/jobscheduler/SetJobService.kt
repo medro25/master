@@ -39,6 +39,7 @@ class SetJobService constructor(val context: Context, val time: Long, val notifi
                     .setRequiredNetworkType(JobInfo.NETWORK_TYPE_UNMETERED)
                     .setPersisted(true)
                     .setExtras(bundle)
+                    .setMinimumLatency(time)
                     .setOverrideDeadline(time)
                     .build()
 
