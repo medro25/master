@@ -46,6 +46,8 @@
 
     <string name="lbl_yes">Yes</string>
     <string name="lbl_no">No</string>
+    <string name="str_enter_a_password">Enter a password</string>
+    <string name="str_enter_valid_email_id">Enter valid email-id</string>
 
     <string name="notification_hint">Enter Notification Message</string>
 

@@ -48,7 +48,6 @@ class RegistrationActivity : AppCompatActivity() {
          */
         databaseReference = FirebaseDatabase.getInstance().reference.child(Constants.DB_KEY_USER)
         registrationDatabinding.signUpButton.setOnClickListener {
-            progressDialog.show(this)
             getData()
         }
 
@@ -81,13 +80,21 @@ class RegistrationActivity : AppCompatActivity() {
         } else {
             textInputLayoutMobileNo.isErrorEnabled = false
         }
-        if (AppUtils.isValidEmail(emailId)) {
+        if (TextUtils.isEmpty(emailId)) {
             textInputLayoutEmail.error = getString(R.string.msg_enter_email_id)
             textInputLayoutEmail.isErrorEnabled = true
             emailEdtView.requestFocus()
             return
         } else {
             textInputLayoutEmail.isErrorEnabled = false
+        }
+        if(AppUtils.isValidEmail(emailId)){
+            textInputLayoutEmail.isErrorEnabled = false
+        }else{
+            textInputLayoutEmail.error = getString(R.string.str_enter_valid_email_id)
+            textInputLayoutEmail.isErrorEnabled = true
+            textInputLayoutEmail.requestFocus()
+            return
         }
         if (TextUtils.isEmpty(password)) {
             textInputLayoutPassword.error = getString(R.string.msg_enter_email_id)
@@ -107,33 +114,33 @@ class RegistrationActivity : AppCompatActivity() {
         }
 
         // progressbar call
-      //  progressDialog.show(this)
+        //  progressDialog.show(this)
 
-            auth.createUserWithEmailAndPassword(emailId, password)
-                .addOnCompleteListener(this) { task ->
+        auth.createUserWithEmailAndPassword(emailId, password)
+            .addOnCompleteListener(this) { task ->
 
-                    if (task.isSuccessful) {
-                        Log.d("success", "linkWithCredential:success")
-                        createNewUser(task.result!!.user!!)
-                    }else{
-                        Log.w("Failure", "linkWithCredential:failure", task.exception)
-                        try {
-                            throw task.exception!!
-                        } catch (e: FirebaseAuthUserCollisionException) {
-                            textInputLayoutEmail.error =
-                                getString(R.string.string_email_id_is_already_register)
-                        } catch (e: FirebaseNetworkException) {
-                            Toast.makeText(
-                                applicationContext,
-                                R.string.string_check_internet_conn_msg,
-                                Toast.LENGTH_SHORT
-                            ).show()
-                        } catch (e: Exception) {
-                            e.printStackTrace()
-                        }
+                if (task.isSuccessful) {
+                    Log.d("success", "linkWithCredential:success")
+                    createNewUser(task.result!!.user!!)
+                } else {
+                    Log.w("Failure", "linkWithCredential:failure", task.exception)
+                    try {
+                        throw task.exception!!
+                    } catch (e: FirebaseAuthUserCollisionException) {
+                        textInputLayoutEmail.error =
+                            getString(R.string.string_email_id_is_already_register)
+                    } catch (e: FirebaseNetworkException) {
+                        Toast.makeText(
+                            applicationContext,
+                            R.string.string_check_internet_conn_msg,
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    } catch (e: Exception) {
+                        e.printStackTrace()
                     }
+                }
 
-        }
+            }
     }
 
     /*
@@ -150,7 +157,8 @@ class RegistrationActivity : AppCompatActivity() {
         var isComingFormSentInquiry = false
 
         if (intent.extras != null) {
-            isComingFormSentInquiry = intent.getBooleanExtra(Constants.INTENT_IS_COMING_FROM_MY_CART, false)
+            isComingFormSentInquiry =
+                intent.getBooleanExtra(Constants.INTENT_IS_COMING_FROM_MY_CART, false)
         }
         if (!isComingFormSentInquiry) {
             val intent = Intent(this@RegistrationActivity, DashboardActivity::class.java)

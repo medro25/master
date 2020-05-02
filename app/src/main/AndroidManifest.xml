@@ -34,15 +34,9 @@
 
         <activity android:name=".ui.user.LoginScreenActivity" />
 
-        <!--<activity android:name=".ui.user.RegistrationActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".ui.reminder.SetReminderActivity" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>-->
-
-        <activity android:name=".ui.reminder.SetReminderActivity">
+        <activity android:name=".ui.user.RegistrationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
