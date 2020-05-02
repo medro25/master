@@ -2,8 +2,11 @@ package com.witnovus.placefinder.utils
 
 class Constants {
 
-    val BLANK_STRING = ""
+    companion object {
+        val BLANK_STRING = ""
 
-    //database
-    var DB_KEY_USER = "users"
+        //database
+        var DB_KEY_USER = "users"
+        var INTENT_IS_COMING_FROM_MY_CART = "isComingFromSendInquiry"
+    }
 }

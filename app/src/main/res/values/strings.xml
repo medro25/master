@@ -28,5 +28,8 @@
     <string name="str_forgot_password">Forgot Password?</string>
     <string name="lbl_set_reminder">Set a reminder</string>
     <string name="lbl_find_a_place">Find a place</string>
+    <string name="str_reset_password">Reset Password</string>
+    <string name="msg_enter_email_id">Enter a email-id</string>
+    <string name="str_registration_successfully">Registration successfully</string>
 
 </resources>
