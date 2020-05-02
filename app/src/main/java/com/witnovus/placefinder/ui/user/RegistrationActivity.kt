@@ -80,13 +80,21 @@ class RegistrationActivity : AppCompatActivity() {
         } else {
             textInputLayoutMobileNo.isErrorEnabled = false
         }
-        if (TextUtils.isEmpty(emailId) || AppUtils.isValidEmail(emailId)) {
+        if (TextUtils.isEmpty(emailId)) {
             textInputLayoutEmail.error = getString(R.string.msg_enter_email_id)
             textInputLayoutEmail.isErrorEnabled = true
             emailEdtView.requestFocus()
             return
         } else {
             textInputLayoutEmail.isErrorEnabled = false
+        }
+        if(AppUtils.isValidEmail(emailId)){
+            textInputLayoutEmail.isErrorEnabled = false
+        }else{
+            textInputLayoutEmail.error = getString(R.string.str_enter_valid_email_id)
+            textInputLayoutEmail.isErrorEnabled = true
+            textInputLayoutEmail.requestFocus()
+            return
         }
         if (TextUtils.isEmpty(password)) {
             textInputLayoutPassword.error = getString(R.string.msg_enter_email_id)

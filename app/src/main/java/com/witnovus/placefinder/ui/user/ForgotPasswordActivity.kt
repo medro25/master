@@ -35,13 +35,21 @@ class ForgotPasswordActivity : AppCompatActivity() {
     private fun resetPassword() {
         emailId = forgotPasswordEmailIdEdtView.text.toString()
 
-        if (AppUtils.isValidEmail(emailId)) {
+        if (TextUtils.isEmpty(emailId)) {
             textInputLayoutEmail.error = getString(R.string.msg_enter_email_id)
             textInputLayoutEmail.isErrorEnabled = true
             return
         } else {
             textInputLayoutEmail.isErrorEnabled = false
         }
+        if (AppUtils.isValidEmail(emailId)){
+            textInputLayoutEmail.isErrorEnabled = false
+        }else{
+            textInputLayoutEmail.error = getString(R.string.str_enter_valid_email_id)
+            textInputLayoutEmail.isErrorEnabled = true
+            return
+        }
+
     }
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
