@@ -1,4 +1,4 @@
-package com.witnovus.placefinder.ui.user
+package com.witnovus.placefinder.ui.reminder
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.appcompat.widget.Toolbar
 import com.witnovus.placefinder.R
 import kotlinx.android.synthetic.main.activity_time_reminder.*
 
-class TimeReminderActivity : AppCompatActivity() {
+class SetReminderActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
