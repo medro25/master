@@ -49,6 +49,10 @@
     <string name="str_enter_a_password">Enter a password</string>
     <string name="str_enter_valid_email_id">Enter valid email-id</string>
 
+    <string name="notification_hint">Enter Notification Message</string>
+
+    <string name="notification_msg">Please insert Notifiaction Message</string>
+    <string name="timer_msg">Please select Time First</string>
     <string name="map_key">AIzaSyBOxxOEDviMhpAeiP_CjmfHwYME1E9CMAA</string>
 
 </resources>

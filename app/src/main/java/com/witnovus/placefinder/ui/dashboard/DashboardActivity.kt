@@ -10,6 +10,7 @@ import com.witnovus.placefinder.databinding.ActivityDahbordBinding
 import com.witnovus.placefinder.ui.reminder.SetReminderActivity
 import com.witnovus.placefinder.ui.searchplace.SearchPlaceActivity
 
+
 class DashboardActivity : AppCompatActivity() {
 
     private lateinit var dahbordBinding: ActivityDahbordBinding
