@@ -31,6 +31,16 @@ class LoginScreenActivity : AppCompatActivity() {
         loginDataBinding.loginButton.setOnClickListener {
             getLoginData()
         }
+
+        loginDataBinding.LoginCreateNewUserTxtView.setOnClickListener {
+            val intent = Intent(this, RegistrationActivity::class.java)
+            startActivity(intent)
+        }
+
+        loginDataBinding.loginForgotPasswordTxtView.setOnClickListener {
+            val intent = Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun getLoginData() {

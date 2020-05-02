@@ -43,5 +43,8 @@ class ForgotPasswordActivity : AppCompatActivity() {
             textInputLayoutEmail.isErrorEnabled = false
         }
     }
-
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }

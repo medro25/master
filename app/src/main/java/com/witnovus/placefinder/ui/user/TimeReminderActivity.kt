@@ -24,5 +24,8 @@ class TimeReminderActivity : AppCompatActivity() {
         timePicker.setIs24HourView(true)
     }
 
-   
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }
