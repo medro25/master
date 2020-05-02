@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Place Finder</string>
+    <string name="app_name">Place Reminder</string>
     <string name="title_activity_search_place">Map</string>
     <string name="title_activity_set_reminder">SetReminderActivity</string>
     <!-- Strings used for fragments for navigation -->
@@ -53,4 +53,6 @@
 
     <string name="notification_msg">Please insert Notifiaction Message</string>
     <string name="timer_msg">Please select Time First</string>
+    <string name="map_key">AIzaSyBOxxOEDviMhpAeiP_CjmfHwYME1E9CMAA</string>
+
 </resources>
