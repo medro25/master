@@ -4,13 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import androidx.databinding.DataBindingUtil
 import com.witnovus.placefinder.R
 import com.witnovus.placefinder.databinding.ActivityDahbordBinding
 import com.witnovus.placefinder.ui.reminder.SetReminderActivity
 import com.witnovus.placefinder.ui.searchplace.SearchPlaceActivity
-import com.witnovus.placefinder.ui.user.TimeReminderActivity
 
 class DashboardActivity : AppCompatActivity() {
 
@@ -26,7 +24,7 @@ class DashboardActivity : AppCompatActivity() {
         })
 
         dahbordBinding.btnReminder.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, TimeReminderActivity::class.java)
+            val intent = Intent(this, SetReminderActivity::class.java)
             startActivity(intent)
         })
 
