@@ -58,6 +58,10 @@
         <service
             android:name=".location.CurrentLocationTrackerService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service android:name=".jobscheduler.NotificationService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
     </application>
 
 </manifest>
