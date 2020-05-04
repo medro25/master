@@ -55,5 +55,6 @@
     <string name="timer_msg">Please select time first</string>
     <string name="map_key">AIzaSyBOxxOEDviMhpAeiP_CjmfHwYME1E9CMAA</string>
     <string name="lbl_select_time">Select Time :- Hours : Minutes</string>
+    <string name="lbl_reminder">Reminder Set</string>
 
 </resources>
