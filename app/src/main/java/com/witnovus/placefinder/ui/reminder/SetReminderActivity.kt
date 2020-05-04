@@ -87,7 +87,7 @@ class SetReminderActivity : AppCompatActivity() {
         notifyMe .led_color(255,255,255,255)
         notifyMe.time(now)
         notifyMe .key("test")
-        notifyMe .addAction(Intent(),"Dismiss",true,false)
+        notifyMe .addAction(Intent(),"Done",true,false)
         notifyMe .large_icon(R.mipmap.ic_launcher)
         notifyMe .rrule("FREQ=MINUTELY;INTERVAL=5;COUNT=2")
         notifyMe .build()
